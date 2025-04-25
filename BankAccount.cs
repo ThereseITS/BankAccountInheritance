@@ -91,6 +91,12 @@ namespace BankAccountInheritance
         {
             OverdraftLimit = 0;
         }
+
+        /// <summary>
+        /// note the calls to the metching  parent constructor, passing the required parameters
+        /// </summary>
+        /// <param name="balance"></param>
+        /// <param name="overdraftLimit"></param>
         public CurrentAccount(decimal balance, decimal overdraftLimit):base(balance)
         {
             this.OverdraftLimit = overdraftLimit;
